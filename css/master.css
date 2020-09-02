@@ -12,6 +12,20 @@
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
   }
 
+  td img{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-bottom: -4px;
+    background: : #555;
+  }
+
+  .header h1{
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
   body {
     background-color: beige;
     color: black;/* set the background color here */
@@ -52,12 +66,12 @@
 
   hr {
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-top: 12rem;
   }
 
   /* this controls how the bullet points in the resume page looks */
   ul {
     display: table;
-    margin: 0 auto;
+    margin-left: 250px;
     text-align: left;
   }
