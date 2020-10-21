@@ -1,0 +1,41 @@
+<!doctype html>
+
+<!-- this is a comment for human! -->
+
+<html lang="en">
+
+  <header>
+    <title>Shivam's Projects</title>
+    <style>
+    #myDIV {
+      text-align: center;
+    }
+    </style>
+    <link rel="stylesheet" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit">
+    <meta name="name" content="Shivam's Portal">
+    <meta name="robots" content="index, follow">
+  </header>
+  <body>
+    <h1><div id=myDIV>Digital Thermometer using thermistor and multi meter</div></h1>
+    <p><b>Aim:</b>Design a Digital Thermometer with Thermistor and Multimeter only, without using Audrino</p>
+    <h2>Setup</h2>
+    <div id=myDIV><img src="images/Electronics.jpeg" width="25%" alt="Projsetup"></div>
+    <h2>Idea</h2>
+    <p>Thermistor works on the principal of photodiodes with extra doping, which causes the free electron to drift causing rise in potential difference across its terminal. We're using that principal into our apparatus</p>
+    <h2>The Design</h2>
+    <p> Our system works with a Three Variable resistors for calibrating and a potentiometer for Thermistor. The output signals coming out of the thermistor will be very small, and it could also not detect small change in the temperature. That's why we needed the op-amp IC-741. It amplifies the signal coming out of the Thermistor, and thus after little bit of Calibrating, we were able to predict the approximate temperature of Human Body</p>
+    <p>As the Voltage is proportional to Temperature of Thermistor in Kelvin.i.e.</p>
+    <div id=myDIV><b>V<span>&#8733;</span>T</b>
+    <br><math><box>V<sub>304.76 K</sub>=K*(304.76)=231.1 MicroAmps(found)</box></math>
+    <br><math><box>V<sub>310.66 K</sub>=K*(310.66)=235.2 MicroAmps(found)</box></math>
+    <p>Thus, After Calculating both K1 and K2 to get K mean for Finally Calibrating Our Thermometer</p>
+    <br><math><box>K<sub>mean</sub>=<box>(K<sub>1</sub>+K<sub>2</sub>)/2</box>=<box>(0.758+0.757)/2</box>=<b>0.7577</b></box></math></div>
+    <br><div id=myDIV><img src="images/Temperature-to-Voltage-Converter-Circuit.jpg" width="25%" alt="Projsetup"></div>
+    <p>Thus Final Calibrated Equation We got:</p>
+    <math><box>V(T)=0.7577T(in Kelvins)</box></math>
+    <h2>Conclusion</h2>
+    <p>We have successfully designed a digital Thermometer, which can measure the temperature ranged between 25 to 80 degrees celcius.</p>
+  </body>
+  </html>
